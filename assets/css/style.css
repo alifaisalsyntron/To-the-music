@@ -357,7 +357,7 @@ main.our-work .our-work-container {
 
 .about-us .hero-section {
 	padding-bottom: 200px;
-	background: url('../Images/about-us-bg.png') no-repeat;
+	background: url('../images/about-us-bg.png') no-repeat;
 	background-position: center 300px;
 }
 
@@ -394,7 +394,7 @@ main.our-work .our-work-container {
 }
 
 .contact-us .hero-section {
-	background: url('../Images/contact-us-bg.png') no-repeat;
+	background: url('../images/contact-us-bg.png') no-repeat;
     background-position: right 125px;
 }
 
@@ -451,7 +451,7 @@ main.our-work .our-work-container {
 }
 
 .news-page .hero-section {
-	background: url('../Images/news-bg.png') no-repeat;
+	background: url('../images/news-bg.png') no-repeat;
     background-position: center 65px;
 }
 
