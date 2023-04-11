@@ -1,0 +1,493 @@
+/*--- Layout ---*/
+
+@font-face {
+    font-family: 'AkiraExpanded';
+    src: url('../fonts/AkiraExpanded.eot');
+    src: url('../fonts/AkiraExpanded.eot') format('embedded-opentype'),
+         url('../fonts/AkiraExpanded.woff2') format('woff2'),
+         url('../fonts/AkiraExpanded.woff') format('woff'),
+         url('../fonts/AkiraExpanded.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Regular.woff') format('woff'),
+        url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+html {
+	font-size: 28px;
+	-webkit-font-smoothing: antialiased;
+}
+
+main {
+	overflow: hidden;
+	padding: 160px 0 60px;
+	max-width: 1920px;
+    margin: 0 auto;
+    display: block;
+}
+
+body {
+	color: #ffffff;
+	font-family: "SFProDisplay";
+	font-size: 1em;
+	background: #000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+p {
+	line-height: 1.05;
+}
+
+img {
+	width: 100%;
+}
+
+.container {
+	max-width: 1190px;
+	padding: 0;
+}
+
+header {
+    background: #121212;
+	padding: 12px;
+	height: 160px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+button:focus {
+	outline: none;
+}
+
+h2,p {
+	color: #fff;
+}
+
+.mb-6 {
+	margin-bottom: 3.5rem;
+}
+
+.mt-6 {
+	margin-top: 3.5rem;
+}
+
+.mb-7 {
+	margin-bottom: 4rem;
+}
+
+.mt-7 {
+	margin-top: 4rem;
+}
+
+.mb-8 {
+	margin-bottom: 4.5rem;
+}
+
+.mt-8 {
+	margin-top: 4.5rem;
+}
+
+.mb-9 {
+	margin-bottom: 5rem;
+}
+
+.mt-9 {
+	margin-top: 5rem;
+}
+
+.gap-10 {
+	gap: 10px;
+}
+
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
+}
+
+.dark-bg {
+	background: #000;
+}
+
+.bg-white {
+	background: #fff;
+}
+
+.bg-white p {
+	color: #000;
+}
+
+.fixed-top {
+	position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.logo-area {
+    font-size: 2em;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.site-menu ul {
+	display: flex;
+    gap: 53px;
+    text-transform: uppercase;
+}
+
+.site-menu ul li {
+	line-height: normal;
+}
+
+.site-menu ul li a {
+	font-size: 0.9em;
+}
+
+.p-section {
+	padding-top: 85px;
+}
+
+.h-title {
+	font-family: 'AkiraExpanded';
+	font-size: 3em;
+    line-height: 1.07;
+}
+
+.content-area .h-title {
+	margin: -10px 0 0;
+	font-size: 3.6em;
+}
+
+.primary-btn {
+	border: none;
+    min-width: 140px;
+    padding: 11px 12px;
+    border-radius: 8px;
+    outline: none;
+	font-size: 0.96em;
+	line-height: 0.8;
+}
+
+.content-area .primary-btn {
+	padding: 15px 18px;
+	margin-top: 10px;
+}
+
+.poster-image {
+	margin: -108px 0 0 -122px;
+}
+
+.made-music.p-section {
+	padding-top: 207px;
+}
+
+.tagline {
+	padding: 17px 13px;
+    max-width: 115px;
+    background: #2F2F2F;
+    border-radius: 8px;
+}
+
+.tagline h4 {
+	margin: 0;
+    font-size: 46px;
+    line-height: 0.89;
+    font-weight: bolder;
+    display: block;
+    font-size: 1.65em;
+    letter-spacing: 0.1em;
+    margin-left: -55px;
+}
+
+.out-story-content .h-title {
+    margin-bottom: 20px;
+}
+
+.out-story-content p {
+	max-width: 873px;
+	margin-bottom: 16px;
+}
+
+.our-story {
+	padding-bottom: 145px;
+}
+
+.main-area-footer {
+	padding: 60px 0 48px;
+    border-top: 1px solid #fff;
+}
+
+.footer-logo {
+	margin-bottom: 24px;
+}
+
+.footer-logo a {
+	font-size: 1.5em;
+    line-height: 1.2;
+	font-weight: 600;
+}
+
+.footer-other-links {
+	display: flex;
+	gap: 40px;
+}
+
+.footer-other-links a,
+.copy-right p {
+	line-height: 20px;
+    font-size: 0.79em;
+	letter-spacing: 0.1em;
+	margin: 0;
+}
+
+.copy-right p {
+	font-weight: 600;
+}
+
+main.our-work .our-work-container {
+	max-width: 1013px;
+}
+
+.slick-dots {
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 0 0;
+    gap: 20px;
+}
+
+.slick-dots button {
+	border: none;
+    width: 16px;
+    height: 16px;
+    text-indent: -1000000000000000000px;
+    border-radius: 24px;
+    background: #424242;
+}
+
+.slick-dots .slick-active button {
+	background: #ffffff;
+}
+
+.our-work .hero-section .h-title {
+	margin-bottom: 40px;
+}
+
+.reviews .h-title,
+.music-playlist-area .h-title {
+	line-height: 1.05;
+    font-size: 2.25em;
+	margin-bottom: 56px;
+}
+
+.music-playlist-area .h-title {
+	margin-bottom: 40px;
+}
+
+.clients-review {
+	width: 301px;
+    height: 231px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.clients-review img {
+	width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.clients-review .client-review {
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.clients-review .client-review p {
+	font-size: 0.93em;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.clients-review .client-review h4 {
+	font-size: 0.68em;
+	line-height: 1.16;
+	font-family: 'AkiraExpanded';
+	margin: 0;
+}
+
+.about-us .hero-section {
+	padding-bottom: 200px;
+	background: url('../Images/about-us-bg.png') no-repeat;
+	background-position: center 300px;
+}
+
+.about-us .hero-section .h-title {
+	margin-bottom: 60px;
+}
+
+.about-us .hero-section p {
+	padding-right: 46px;
+    letter-spacing: 0.08em;
+}
+
+.about-us .hero-section .owen-name {
+	font-weight: bold;
+    line-height: 38px;
+    margin: 6px 0 24px;
+    font-size: 1.29em;
+}
+
+.about-us .hero-section .owner-position {
+	font-family: 'AkiraExpanded';
+	margin-bottom: 5px;
+    font-size: 1em;
+    line-height: 1.08;
+}
+
+.about-us .hero-section .owner-signature {
+	max-width: 370px;
+	margin-top: -10px;
+}
+
+.contact-us .contact-form {
+	max-width: 570px;
+}
+
+.contact-us .hero-section {
+	background: url('../Images/contact-us-bg.png') no-repeat;
+    background-position: right 125px;
+}
+
+.contact-us .hero-section .h-title {
+	margin-bottom: 75px;
+}
+
+.contact-us .hero-section .contact-form h4 {
+	margin: 0;
+    font-size: 1.72em;
+	font-weight: bold;
+    line-height: 1.2;
+}
+
+.contact-us .hero-section .contact-form .sub-title {
+	margin-bottom: 45px;
+    display: block;
+    font-size: 1.08em;
+    line-height: 1.2;
+}
+
+.contact-us .hero-section .contact-form input,
+.contact-us .hero-section .contact-form textarea {
+	border: none;
+    padding: 21px;
+    height: 64px;
+    font-size: 23px;
+    width: 100%;
+    border-radius: 8px;
+    background: #2F2F2F;
+    color: #ffffff;
+    outline: none;
+    box-shadow: none;
+	margin-bottom: 24px;
+}
+
+.contact-us .hero-section .contact-form input::placeholder,
+.contact-us .hero-section .contact-form textarea::placeholder {
+	color: #ffffff;
+}
+
+.contact-us .hero-section .contact-form textarea {
+	height: 301px;
+	resize: none;
+}
+
+.social-icons {
+	padding: 82px 0 22px;
+    gap: 40px;
+}
+
+.news-page .hero-section .h-title {
+	margin-bottom: 90px;
+}
+
+.news-page .hero-section {
+	background: url('../Images/news-bg.png') no-repeat;
+    background-position: center 65px;
+}
+
+.news-card {
+	max-width: 1016px;
+    background: rgba(47, 47, 47, 0.52);
+    padding: 10px 24px 15px;
+    border-radius: 8px;
+	margin-bottom: 36px;
+}
+
+.news-card .card-title {
+	margin: 0;
+    font-size: 1.72em;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.news-card .date-time {
+	color: #696969;
+    display: block;
+    line-height: 1.15;
+    font-size: 0.72em;
+	margin-top: -6px;
+	margin-bottom: 15px;
+}
+
+.news-card p {
+	font-size: 0.68em;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+	margin: 0;
+}
+
+.news-card a {
+	font-size: 0.9em;
+    line-height: 30px;
+    color: #696969;
+}
