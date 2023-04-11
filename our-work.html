@@ -37,7 +37,15 @@
 					<a href="index.html">To The Music</a>
 				</div>
 				<div class="site-menu d-flex justify-content-center align-items-center">
+					<div class="res-menu">
+						<a href="javascript: void(0);">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+					</div>
 					<ul class="m-0">
+						<li class="close-res-menu">x</li>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="our-work.html">Work</a></li>
 						<li><a href="about-us.html">About Us</a></li>
@@ -185,13 +193,46 @@
 
 	<script>
 
+		var playBtn = document.getElementById("playBtn");
+
 		var wavesurfer = WaveSurfer.create({
 			container: '#waveform',
-			waveColor: 'violet',
-			progressColor: 'purple'
+			waveColor: '#bebebe',
+			progressColor: '#ffffff',
+			barWidth: 1,
+			responsive: true,
+			height: 90,
 		});
 
-		wavesurfer.load('assets/images/14-Agent-of-Change.mp3');
+		wavesurfer.load('assets/Images/Game_of_Thrones_Theme_Song.mp3');
+
+		playBtn.onclick = function () {
+			wavesurfer.playPause();
+			if (playBtn.src.includes("play-audio-icon.svg")) {
+				playBtn.src = "assets/Images/pause-audio-icon.svg";
+			} else {
+				playBtn.src = "assets/Images/play-audio-icon.svg";
+			}
+		}
+
+		wavesurfer.on('finish', function () {
+			playBtn.src = "assets/Images/play-audio-icon.svg";
+			wavesurfer.stop();
+		});
+
+		wavesurfer.on('ready', function () {
+			duration = wavesurfer.getDuration() / 60,
+				document.getElementById('time').innerText = duration.toFixed(2).replace(".", ":");
+		});
+		wavesurfer.on('audioprocess', function () {
+			if (wavesurfer.isPlaying()) {
+				totalTime = wavesurfer.getDuration() / 60,
+					currentTime = wavesurfer.getCurrentTime() / 60,
+					remainingTime = totalTime - currentTime;
+
+				document.getElementById('time').innerText = remainingTime.toFixed(2).replace(".", ":");
+			}
+		});
 	</script>
 
 
